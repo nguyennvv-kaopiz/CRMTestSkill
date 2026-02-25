@@ -14,7 +14,13 @@ Project test đầy đủ input để kiểm thử **Sync Rules MCP**: khi IDE g
 
 ## Domain
 
-CRM: quản lý **Customer** và **Order** (list screen, detail screen, REST API).
+**CRM (Customer Relationship Management):** quản lý khách hàng, đơn hàng, lead và cơ hội bán hàng.
+
+- **Customer:** danh sách, chi tiết, thêm/sửa/xóa; tag, lịch sử tương tác; liên kết Company, Contact.
+- **Order:** danh sách đơn hàng theo khách hàng.
+- **Lead:** khách tiềm năng, chuyển Lead → Customer.
+- **Opportunity:** cơ hội bán hàng theo pipeline (Qualified, Proposal, Negotiation, Won, Lost).
+- **Dashboard:** tổng quan doanh thu, tỷ lệ chuyển đổi, pipeline.
 
 ## Cấu trúc
 

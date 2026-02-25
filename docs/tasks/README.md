@@ -1,6 +1,6 @@
 # Các task common dự án (CRM)
 
-Thư mục này chứa các file mô tả **task thường gặp** trong dự án, dùng để onboard, estimate hoặc sync với MCP/Skill (vd Sync Rules MCP).
+Thư mục này chứa các file mô tả **task thường gặp** trong dự án.
 
 ## Danh sách task
 
@@ -25,9 +25,3 @@ Thư mục này chứa các file mô tả **task thường gặp** trong dự á
 | Pipeline | PipelineScreen | GET /opportunities/pipeline, /pipeline-stages, PATCH /opportunities/:id/stage |
 | Endpoints | api/*.js (customerApi, leadApi, …) | routes/*.route.js, controllers/*.controller.js |
 | UT | __tests__/*.test.jsx, *.test.jsx | tests/*.test.js |
-
-## Cách dùng
-
-- **Dev**: đọc từng file khi làm đúng task đó (vd làm list screen → mở `01-task-ui-list-screen.md`).
-- **MCP/Skill**: dùng nội dung (title, mô tả, pattern) để match skill hoặc sinh gợi ý task.
-- **Estimate**: dựa vào checklist trong từng file để điểm story/ task.
