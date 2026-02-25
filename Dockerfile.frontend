@@ -1,0 +1,16 @@
+FROM node:18-alpine
+
+WORKDIR /app
+
+COPY frontend/package*.json ./frontend/
+RUN cd frontend && npm ci
+
+COPY frontend/ ./frontend/
+RUN cd frontend && npm run build
+
+WORKDIR /app/frontend
+EXPOSE 3000
+
+ENV VITE_API_URL=http://localhost:3001
+RUN npm install -g serve
+CMD ["serve", "-s", "dist", "-l", "3000"]
